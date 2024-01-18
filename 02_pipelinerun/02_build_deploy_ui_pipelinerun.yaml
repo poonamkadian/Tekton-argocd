@@ -7,11 +7,11 @@ spec:
     name: build-and-deploy
   params:
   - name: deployment-name
-    value: pipelines-vote-ui
+    value: vote-ui
   - name: git-url
-    value: https://github.com/openshift/pipelines-vote-ui.git
+    value: https://github.com/openshift/vote-ui.git
   - name: IMAGE
-    value: image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/pipelines-vote-ui
+    value: image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/vote-ui
   workspaces:
   - name: shared-workspace
     volumeClaimTemplate:
