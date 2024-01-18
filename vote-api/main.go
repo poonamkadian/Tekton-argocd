@@ -8,7 +8,7 @@ import (
 )
 
 var inMemoryStore = make(map[string]string)
-var redirectURL = "http://0.0.0.0:9000"
+var redirectURL = "vote-api:9000"
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()

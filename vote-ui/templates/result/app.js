@@ -1,4 +1,4 @@
-var app = angular.module('catsvsdogs', []);
+var app = angular.module('podmanvsdocker', []);
 
 var bg1 = document.getElementById('background-stats-1');
 var bg2 = document.getElementById('background-stats-2');
