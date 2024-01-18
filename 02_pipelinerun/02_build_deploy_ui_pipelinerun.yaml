@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  name: build-deploy-ui-pipelinerun
+  name: build-ui-pipelinerun
 spec:
   pipelineRef:
     name: build-and-deploy
@@ -9,9 +9,13 @@ spec:
   - name: deployment-name
     value: vote-ui
   - name: git-url
-    value: https://github.com/openshift/vote-ui.git
+    value: https://github.com/poonamkadian/Tekton-argocd.git
   - name: IMAGE
-    value: image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/vote-ui
+    value: quay.io/pkjoon/ui:1.0
+  - name: DOCKERFILE
+    value: vote-ui/Dockerfile
+  - name: manifest_dir
+    value: vote-ui  
   workspaces:
   - name: shared-workspace
     volumeClaimTemplate:
