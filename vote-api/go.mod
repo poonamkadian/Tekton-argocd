@@ -1,4 +1,4 @@
-#module github.com/openshift/vote-api
+module github.com/openshift/vote-api
 
 go 1.14
 
