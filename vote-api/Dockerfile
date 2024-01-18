@@ -6,6 +6,7 @@ ADD . /build/
 
 
 RUN mkdir /tmp/cache
+RUN go mod init vote-api
 RUN CGO_ENABLED=0 GOCACHE=/tmp/cache go build  -mod=vendor -v -o /tmp/api-server .
 
 FROM scratch
