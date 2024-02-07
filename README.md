@@ -1,4 +1,4 @@
-# OpenShift Pipelines Tutorial
+# OpenShift TeKton Pipelines Tutorial
 
 Welcome to the OpenShift Pipelines tutorial!
 
